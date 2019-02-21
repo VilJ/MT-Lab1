@@ -31,16 +31,35 @@
   <script>
     var player = videojs('my_video_1');
   </script>
+<script> 
+	var myVideo=videojs('my_video_1'); 
+
+	function playButton()
+	{ 
+ 	   if (myVideo.paused) 
+ 	   myVideo.play(); 
+	
+	} 
+	function pauseButton()
+	{
+	if (myvideo.play)
+	 myVideo.pause(); 
+	}
+	
+	
+
+
+</script> 
   
   <!--
   location for your player window
   -->
   
-	<button type="button">Play</button>
-	<button type="button">Pause</button>
-	<button type="button">Stop</button>
-	<button type="button">Jump to 5 sec forward</button>
-	<button type="button">Jump to 5 sec backwards</button>	
+	<button onclick="playButton()">Play</button>
+	<button onclick="pauseButton()">Pause</button>
+	<button type="stopButton">Stop</button>
+	<button type="jumpupButton">Jump to 5 sec forward</button>
+	<button type="jumpdownButton">Jump to 5 sec backwards</button>	
 	
 	<p>Playlist</p>
 	
