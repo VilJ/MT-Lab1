@@ -1,88 +1,22 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset=utf-8/>
-<title>Lab 1. Introduction to HTML5 and HLS</title>
-   
-	
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>MediaElement.js 3.0 - audio/video unification library</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-    <link rel="stylesheet" href="../build/mediaelementplayer.css">
-
-    <style>
-
-        html, body {
-            overflow-x: hidden;
-        }
-
-        #container {
-            padding: 0 20px 50px;
-        }
-        .error {
-            color: red;
-        }
-        a {
-            word-wrap: break-word;
-        }
-
-        code {
-            font-size: 0.8em;
-        }
-
-        #player2-container .mejs__time-buffering, #player2-container .mejs__time-current, #player2-container .mejs__time-handle,
-        #player2-container .mejs__time-loaded, #player2-container .mejs__time-hovered, #player2-container .mejs__time-marker, #player2-container .mejs__time-total {
-            height: 2px;
-        }
-
-        #player2-container .mejs__time-total {
-            margin-top: 9px;
-        }
-        #player2-container .mejs__time-handle {
-            left: -5px;
-            width: 12px;
-            height: 12px;
-            border-radius: 50%;
-            background: #ffffff;
-            top: -5px;
-            cursor: pointer;
-            display: block;
-            position: absolute;
-            z-index: 2;
-            border: none;
-        }
-        #player2-container .mejs__time-handle-content {
-            top: 0;
-            left: 0;
-            width: 12px;
-            height: 12px;
-        }
-    </style>
-  <!--
-  Embed needed js libraries for video player. Note, libraries needs to be hosted on your server, under /js folder.
-   -->
-  <!--
-  Location for CSS if needed. Note, cascade style sheets needs to be hosted on your server, under /css folder.
-  -->
-   
-
-
-</head>
-<body>
-  <h1>My first HLS player</h1>
+<meta charset=utf-8 />
+<title>videojs-contrib-hls embed</title>
   
-	<body>
-    <video src="https://video-dev.github.io/streams/x36xhzz/x36xhzz.m3u8" width="1280px" height="720px" />
-	</body>
-	
-	<h2>Video Player</h2>
+  <!--
 
-             <link href="https://unpkg.com/video.js/dist/video-js.css" rel="stylesheet">
+  Uses the latest versions of video.js and videojs-http-streaming.
+
+  To use specific versions, please change the URLs to the form:
+
+  <link href="https://unpkg.com/video.js@6.7.1/dist/video-js.css" rel="stylesheet">
+  <script src="https://unpkg.com/video.js@6.7.1/dist/video.js"></script>
+  <script src="https://unpkg.com/@videojs/http-streaming@0.9.0/dist/videojs-http-streaming.js"></script>
+
+  -->
+
+  <link href="https://unpkg.com/video.js/dist/video-js.css" rel="stylesheet">
 </head>
 <body>
   <h1>Video.js Example Embed</h1>
@@ -97,6 +31,7 @@
   <script>
     var player = videojs('my_video_1');
   </script>
+  
   <!--
   location for your player window
   -->
